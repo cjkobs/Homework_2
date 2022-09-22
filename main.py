@@ -16,4 +16,7 @@ print(res.x)
 
 # This section is part b, pretty sure this is what it's asking for
 fun = lambda x: (2-2*x[0]-3*x[1])**2 + (x[0])**2 + (x[1]-1)**2
-# checked the slack and saw we are supposed to write our own gradient descent algorithm
+# god how did it take me this long to just hardcode the gradient in, whatever here are the gradient and hessian
+grad= lambda x: [(-8+10*x[0]+12*x[1]),(-14+12*x[1]+20*x[2])]
+hess= [[10, 12],[12 20]]
+
